@@ -1,4 +1,4 @@
-name: dino_run
+name: p3lep_run
 description: A 2D infinite side scroller.
 
 publish_to: "none"
@@ -17,6 +17,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: 1.0.6
+  google_fonts: ^6.1.0
 
 dev_dependencies:
   hive_generator: 2.0.1
@@ -34,6 +35,7 @@ flutter:
     - assets/images/Bat/
     - assets/images/Rino/
     - assets/audio/
+    - assets/images/DinoSprites - mort.png
 
   fonts:
     - family: Audiowide

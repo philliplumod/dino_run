@@ -13,6 +13,7 @@ import 'models/player_data.dart';
 import 'widgets/pause_menu.dart';
 import 'widgets/settings_menu.dart';
 import 'widgets/game_over_menu.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 Future<void> main() async {
   // Ensures that all bindings are initialized
@@ -46,9 +47,9 @@ class DinoRunApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Dino Run',
+      title: 'P3LEP Run',
       theme: ThemeData(
-        fontFamily: 'Audiowide',
+        textTheme: GoogleFonts.poppinsTextTheme(),
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
         // Settings up some default theme for elevated buttons.

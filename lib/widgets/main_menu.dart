@@ -36,10 +36,11 @@ class MainMenu extends StatelessWidget {
                 spacing: 10,
                 children: [
                   const Text(
-                    'Dino Run',
+                    'P3LEP Run',
                     style: TextStyle(
                       fontSize: 50,
                       color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   ElevatedButton(

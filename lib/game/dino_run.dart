@@ -22,7 +22,7 @@ class DinoRun extends FlameGame with TapDetector, HasCollisionDetection {
 
   // List of all the image assets.
   static const _imageAssets = [
-    'DinoSprites - tard.png',
+    'DinoSprites - mort.png',
     'AngryPig/Walk (36x30).png',
     'Bat/Flying (46x30).png',
     'Rino/Run (52x34).png',
@@ -30,7 +30,6 @@ class DinoRun extends FlameGame with TapDetector, HasCollisionDetection {
     'parallax/plx-2.png',
     'parallax/plx-3.png',
     'parallax/plx-4.png',
-    'parallax/plx-5.png',
     'parallax/plx-6.png',
   ];
 
@@ -79,7 +78,6 @@ class DinoRun extends FlameGame with TapDetector, HasCollisionDetection {
         ParallaxImageData('parallax/plx-2.png'),
         ParallaxImageData('parallax/plx-3.png'),
         ParallaxImageData('parallax/plx-4.png'),
-        ParallaxImageData('parallax/plx-5.png'),
         ParallaxImageData('parallax/plx-6.png'),
       ],
       baseVelocity: Vector2(10, 0),
@@ -93,7 +91,7 @@ class DinoRun extends FlameGame with TapDetector, HasCollisionDetection {
   /// This method add the already created [Dino]
   /// and [EnemyManager] to this game.
   void startGamePlay() {
-    _dino = Dino(images.fromCache('DinoSprites - tard.png'), playerData);
+    _dino = Dino(images.fromCache('DinoSprites - mort.png'), playerData);
     _enemyManager = EnemyManager();
 
     world.add(_dino);
